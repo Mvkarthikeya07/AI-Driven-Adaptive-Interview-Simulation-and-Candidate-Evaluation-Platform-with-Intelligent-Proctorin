@@ -302,7 +302,7 @@ Includes:
 • Session validation
 • Automated proctoring rules
 • Violation-triggered interview submission
-
+```bash
 ## 📂 Project Structure
 │
 ├── app.py
@@ -344,7 +344,7 @@ Includes:
 │
 └── instance/
     └── interview.db
-    
+ ````   
 ⚙️ Installation
 
 Clone the repository
