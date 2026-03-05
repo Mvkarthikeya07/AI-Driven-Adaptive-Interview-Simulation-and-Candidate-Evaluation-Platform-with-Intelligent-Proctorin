@@ -344,7 +344,6 @@ Includes:
 │
 └── instance/
     └── interview.db
-```
     
 ⚙️ Installation
 
