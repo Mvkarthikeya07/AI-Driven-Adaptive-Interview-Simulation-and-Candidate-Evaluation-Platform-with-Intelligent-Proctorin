@@ -137,7 +137,34 @@ The system maintains a history of previous interviews including:
 
 This helps candidates track their learning progress over time.
 
+🏆 Hackathon Recognition
+
+This project was developed and demonstrated as part of AXIOML 2026 – A National Level Hackathon organized by the Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning), Prathyusha Engineering College.
+
+The hackathon brought together students and developers to design innovative AI-driven solutions addressing real-world technological challenges under time-constrained conditions.
+
+Hackathon Details
+
+Event: AXIOML 2026 – National Level Hackathon
+Organizer: Department of CSE – Artificial Intelligence & Machine Learning, Prathyusha Engineering College
+Dates: February 3–4, 2026
+
+During the event, this platform was presented as an AI-powered interview simulation and candidate evaluation system, demonstrating how intelligent systems can assist in automated interview preparation, candidate assessment, and secure proctored interview environments.
+
+The project highlighted the integration of:
+
+Adaptive AI-driven interview question generation
+
+Automated candidate response evaluation
+
+Browser-based behavioral proctoring mechanisms
+
+Structured performance analytics for interview feedback
+
+The hackathon experience provided valuable exposure to rapid prototyping, collaborative problem-solving, and real-world AI system design in a competitive innovation environment.
+
 🧠 Core System Components
+
 1️⃣ Adaptive AI Question Engine
 
 The platform dynamically generates interview questions based on:
