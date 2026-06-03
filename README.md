@@ -1,364 +1,277 @@
-🤖 AI-Driven Adaptive Interview Simulation and Candidate Evaluation Platform with Intelligent Proctoring
+<div align="center">
 
-Intelligent Interview Simulation with Automated Assessment and Behavioral Proctoring
+<img src="https://img.shields.io/badge/AI--Powered-Interview%20Platform-6C63FF?style=for-the-badge&logo=robot&logoColor=white" />
 
-An AI-powered full-stack interview simulation platform designed to replicate real-world technical interviews through adaptive question generation, automated candidate evaluation, and intelligent behavioral proctoring.
+# 🤖 AI-Driven Adaptive Interview Simulation & Evaluation Platform
 
-The system dynamically adjusts interview difficulty based on candidate performance, evaluates responses using structured scoring mechanisms, and monitors interview integrity through browser-based proctoring techniques.
+### *Intelligent Proctoring · Adaptive Questioning · Automated Scoring · Performance Analytics*
 
-By integrating AI-driven evaluation, secure browser monitoring, and structured performance analytics, the platform provides a complete automated environment for technical interview practice and candidate assessment.
+<br/>
 
-🚀 Key Highlights
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-2.x-000000?style=flat-square&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-Head%20Pose-0F9D58?style=flat-square&logo=google&logoColor=white)](https://mediapipe.dev)
+[![Chart.js](https://img.shields.io/badge/Chart.js-Visualization-FF6384?style=flat-square&logo=chart.js&logoColor=white)](https://chartjs.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![Hackathon](https://img.shields.io/badge/AXIOML%202026-National%20Hackathon-FF4500?style=flat-square&logo=trophy&logoColor=white)](#-hackathon-recognition)
 
-• Adaptive Interview Engine – Dynamically generates role-specific interview questions with progressive difficulty
-• Automated Candidate Evaluation – Intelligent scoring based on conceptual accuracy and explanation quality
-• Secure Interview Environment – Anti-cheating mechanisms using browser monitoring
-• Structured Performance Analytics – Detailed reports with performance visualization
-• Real Interview Simulation – Time-controlled question flow replicating real interview conditions
-• Behavioral Proctoring – Suspicious activity detection using browser events and webcam monitoring
+<br/>
 
-📸 Application Screenshots
+> **A production-grade, full-stack AI interview simulation platform** that replicates real-world technical interviews through adaptive question generation, automated response evaluation, and intelligent behavioral proctoring — enabling a fully autonomous, scalable, and tamper-resistant candidate assessment environment.
 
-The repository includes screenshots demonstrating the complete workflow of the AI-Driven Adaptive Interviewing Platform, from authentication to interview evaluation and performance analytics.
+<br/>
 
-🔐 Login Interface
+[🚀 Quick Start](#%EF%B8%8F-installation--setup) · [🧠 Architecture](#-system-architecture) · [📸 Screenshots](#-application-screenshots) · [⚙️ Features](#-core-features) · [🤝 Contributing](#-contributing)
 
-<img width="1366" height="768" alt="Screenshot (215)" src="https://github.com/user-attachments/assets/76c1d2b0-a633-481b-9337-d469f4574c52" />
+</div>
 
-Shows the secure login page where candidates authenticate using their email and password before accessing the interview dashboard.
+---
 
-🔑 Password Reset System
+## 📌 Table of Contents
 
-<img width="1366" height="768" alt="Screenshot (216)" src="https://github.com/user-attachments/assets/ab3970e7-99f6-4dc0-a43e-dad4ac731d01" />
+- [Overview](#-overview)
+- [Key Highlights](#-key-highlights)
+- [Core Features](#-core-features)
+- [Application Screenshots](#-application-screenshots)
+- [System Architecture](#-system-architecture)
+- [Project Structure](#-project-structure)
+- [Tech Stack](#-tech-stack)
+- [Installation & Setup](#%EF%B8%8F-installation--setup)
+- [Interview Workflow](#-interview-workflow)
+- [Proctoring System](#-intelligent-proctoring-system)
+- [Evaluation Engine](#-ai-evaluation-engine)
+- [Performance Reports](#-performance-reports)
+- [Hackathon Recognition](#-hackathon-recognition)
+- [Roadmap](#-roadmap)
+- [License](#-license)
 
-Allows users to securely reset their password if they forget their login credentials.
+---
 
-🧑‍💻 Interview Dashboard
+## 🌐 Overview
 
-<img width="1366" height="768" alt="Screenshot (217)" src="https://github.com/user-attachments/assets/999bb613-5344-4112-be60-c1f1f1149ae7" />
+The **AI-Driven Adaptive Interview Simulation Platform** is a full-stack intelligent system built to automate the end-to-end interview process — from candidate authentication to question delivery, real-time proctoring, AI-based answer evaluation, and structured performance reporting.
 
-The main dashboard where candidates can start a new interview session by selecting their desired role and interview type.
+The platform addresses a critical gap in modern recruitment and interview preparation: the lack of **intelligent, adaptive, and secure mock interview environments**. By dynamically adjusting difficulty based on candidate performance and monitoring behavioral integrity, the system closely mimics the rigor and conditions of real-world technical interviews.
 
-🎯 Role Selection & Interview Type
+### What Makes This Different
 
-<img width="1366" height="768" alt="Screenshot (218)" src="https://github.com/user-attachments/assets/300336a8-0ad8-41a7-bd83-395e83460cf1" />
+| Traditional Mock Interviews | This Platform |
+|---|---|
+| Static question banks | ✅ Adaptive AI-generated questions |
+| Manual evaluation | ✅ Automated scoring with rubrics |
+| No proctoring | ✅ Full behavioral monitoring |
+| Generic feedback | ✅ Personalized improvement plans |
+| No history tracking | ✅ Cross-session progress analytics |
 
-<img width="1366" height="768" alt="Screenshot (219)" src="https://github.com/user-attachments/assets/bd914a9b-79db-44c9-8a5f-60f3ea67a363" />
+---
 
-Candidates can choose from multiple technical roles such as:
+## ⚡ Key Highlights
 
-• Software Engineer
-• Data Scientist
-• Machine Learning Engineer
-• Frontend Developer
-• Backend Developer
-• DevOps Engineer
-• Cybersecurity Analyst
-• Cloud Engineer
-
-They can also choose between:
-
-• Technical Interview Mode
-• Behavioral Interview Mode
-
-🤖 AI Proctored Interview Mode
-
-<img width="1366" height="768" alt="Screenshot (220)" src="https://github.com/user-attachments/assets/e71881b5-29a3-4ed1-8a87-cfe0f72c1b62" />
-
-Before starting the interview, the system activates AI Proctored Mode, requiring:
-
-• Fullscreen access
-• Webcam permission
-
-This ensures a secure and monitored interview environment.
-
-⚠️ Security Violation Detection
-
-<img width="1366" height="768" alt="Screenshot (222)" src="https://github.com/user-attachments/assets/5e993a60-06d4-43c8-87c5-e42ad44890f9" />
-
-<img width="1366" height="768" alt="Screenshot (223)" src="https://github.com/user-attachments/assets/e01f66a1-e83c-4619-a1e8-ebd193e204d2" />
-
-The platform detects suspicious behavior during the interview such as:
-
-• Head movement away from screen
-• Leaving fullscreen mode
-• Tab switching
-
-Warnings are issued, and after three violations the interview is automatically submitted.
-
-⏱ Interview Question Interface
-
-<img width="1366" height="768" alt="Screenshot (232)" src="https://github.com/user-attachments/assets/a74704ee-0adc-4af6-b126-2eff2c2d5cef" />
-
-Displays the live interview environment including:
-
-• Timer countdown
-• Question display
-• Answer submission box
-• Webcam monitoring
-
-📊 AI Generated Interview Report
-
-<img width="1366" height="768" alt="Screenshot (225)" src="https://github.com/user-attachments/assets/8c2fcdd9-0d21-40bc-9e8b-7c6b8da0aa36" />
-
-<img width="1366" height="768" alt="Screenshot (226)" src="https://github.com/user-attachments/assets/a346b3c3-75b8-4381-a5c1-29e1608f8415" />
-
-After completing the interview, the platform generates a detailed evaluation report including:
-
-• Overall interview score
-• Performance radar chart
-• Technical skill evaluation
-• Plagiarism analysis
-
-📋 Detailed Answer Evaluation
-
-<img width="1366" height="768" alt="Screenshot (227)" src="https://github.com/user-attachments/assets/4df613de-4266-440b-a612-4611dcba9bba" />
-
-<img width="1366" height="768" alt="Screenshot (228)" src="https://github.com/user-attachments/assets/d635213b-4aa8-43cf-9478-f30dd47deccf" />
-
-Provides a question-by-question breakdown including:
-
-• Candidate answer
-• Correct reference answer
-• Individual question score
-• Improvement suggestions
-
-📈 Interview History & Progress Tracking
-
-<img width="1366" height="768" alt="Screenshot (231)" src="https://github.com/user-attachments/assets/9a1dfd6d-5fd2-4326-9533-6d06a65d36ed" />
-
-The system maintains a history of previous interviews including:
-
-• Interview role
-• Interview type
-• Final score
-• Interview date
-• Security status (Completed / Cheated)
-
-This helps candidates track their learning progress over time.
-
-🏆 Hackathon Recognition
-
-This project was developed and demonstrated as part of AXIOML 2026 – A National Level Hackathon organized by the Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning), Prathyusha Engineering College.
-
-The hackathon brought together students and developers to design innovative AI-driven solutions addressing real-world technological challenges under time-constrained conditions.
-
-Hackathon Details
-
-Event: AXIOML 2026 – National Level Hackathon
-Organizer: Department of CSE – Artificial Intelligence & Machine Learning, Prathyusha Engineering College
-Dates: February 3–4, 2026
-
-During the event, this platform was presented as an AI-powered interview simulation and candidate evaluation system, demonstrating how intelligent systems can assist in automated interview preparation, candidate assessment, and secure proctored interview environments.
-
-The project highlighted the integration of:
-
-Adaptive AI-driven interview question generation
-
-Automated candidate response evaluation
-
-Browser-based behavioral proctoring mechanisms
-
-Structured performance analytics for interview feedback
-
-The hackathon experience provided valuable exposure to rapid prototyping, collaborative problem-solving, and real-world AI system design in a competitive innovation environment.
-
-🔗 LinkedIn Post
-
-The hackathon recognition and certificate can be viewed here:
-
-https://www.linkedin.com/posts/m-v-karthikeya-b26a2131b_hackathon-axioml2026-artificialintelligence-activity-7437492275678515200-QQbR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEhlw4BT-6V0rnLIZSzBIoK7YvV2QlbHLc
-
-🧠 Core System Components
-
-1️⃣ Adaptive AI Question Engine
-
-The platform dynamically generates interview questions based on:
-
-• Selected job role
-• Interview type (technical / behavioral)
-• Candidate previous answer performance
-
-Capabilities
-
-• Adaptive difficulty progression Easy → Medium → Hard
-• Role-specific question banks
-• No repeated questions in a single interview session
-• Support for coding and conceptual questions
-
-This allows the system to simulate real interviewer behavior where question difficulty evolves based on candidate responses.
-
-💬 Interview Interaction
-
-The platform provides a structured text-based interview interface.
-
-Features
-
-• Text-based answer submission
-• Real-time question display
-• Structured response evaluation
-• Sequential interview progression
-• Time-controlled question answering
-
-This enables candidates to practice clear technical explanations similar to real interviews.
-
-📊 Intelligent Answer Evaluation Engine
-
-Each candidate response is evaluated using an automated scoring engine.
-
-Evaluation Criteria
-
-• Conceptual correctness
-• Technical depth of explanation
-• Clarity of response
-• Logical answer structure
-• Relevance to expected solution
-
-Generated Metrics
-
-• Question-wise score
-• Overall interview score
-• Candidate confidence indicator
-
-📈 Structured Interview Performance Report
-
-After completing the interview, the platform generates a comprehensive performance report.
-
-Report Includes
-
-• Overall candidate score
-• Radar chart visualization
-• Question-wise evaluation
-• Correct answers for weak responses
-• Confidence level estimation
-• Security violation indicators
-
-🧠 Automated Feedback System
-
-The system generates personalized feedback based on interview performance.
-
-High Performance (Score ≥ 8)
-
-• Strong conceptual understanding
-• Interview-ready candidate
-• Advanced improvement suggestions
-
-Moderate Performance (Score 5–7)
-
-• Concept clarification recommendations
-• Improved explanation techniques
-
-Needs Improvement (Score < 5)
-
-• Fundamental concept revision guidance
-• Coding practice suggestions
-• Structured answer writing techniques
-
-🔒 Intelligent Proctoring System
-
-To maintain interview integrity, the platform includes a comprehensive monitoring layer.
-
-Security Features
-
-• Fullscreen enforcement
-• ESC key detection
-• Tab switching detection
-• Window blur monitoring
-• Copy-paste blocking
-• Developer tools blocking
-• Webcam monitoring
-• Head pose detection using MediaPipe
-
-Security Response
-
-If suspicious behavior occurs:
-
-• Interview session is automatically submitted
-• Session flagged as Security Violation
-
-⏱ Time-Controlled Interview Environment
-
-The interview flow simulates real technical interview conditions.
-
-Features
-
-• 60-second timer per question
-• Automatic question skip on timeout
-• Sequential interview progression
-• Controlled interview pacing
-
-📂 Persistent Interview Data Storage
-
-All interview activity is stored for analytics and tracking.
-
-Stored Data
-
-• Interview sessions
-• Candidate responses
-• Question difficulty levels
-• Score history
-• Cheating flags
-• Performance analytics
-
-🏗 System Architecture
-
-The platform follows a modular full-stack architecture integrating AI evaluation with secure web interaction.
-
-Backend Technologies
-
-• Flask – Web application framework
-• SQLAlchemy – ORM for database operations
-• SQLite – Lightweight relational database
-
-Backend Modules
-
-• Adaptive difficulty engine
-• Answer evaluation engine
-• Question generation module
-• Fairness normalization module
-• Interview report generation system
-
-Frontend Technologies
-
-• HTML5
-• CSS3
-• JavaScript
-• Chart.js (performance visualization)
-
-Security Layer
-
-Ensures secure interview sessions.
-
-Includes:
-
-• Browser activity monitoring
-• Session validation
-• Automated proctoring rules
-• Violation-triggered interview submission
 ```
+┌─────────────────────────────────────────────────────────────────┐
+│  🎯  Adaptive Engine       Difficulty scales with performance    │
+│  🧠  AI Evaluation         Multi-criteria automated scoring      │
+│  🔒  Proctoring            Browser + webcam behavioral analysis  │
+│  📊  Analytics             Radar charts + question-level reports │
+│  ⏱️  Real Conditions       60s timers, no repeats, live flow     │
+│  📈  Progress Tracking     Full interview history with flags     │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔧 Core Features
+
+### 🎯 Adaptive Interview Engine
+- Dynamically adjusts question difficulty: **Easy → Medium → Hard**
+- Role-specific question banks for 8+ technical domains
+- Zero question repetition within a single session
+- Supports both **conceptual** and **coding** questions
+
+### 🤖 AI-Powered Answer Evaluation
+- Multi-criteria scoring across: conceptual correctness, technical depth, clarity, logical structure, and relevance
+- Per-question scoring with an aggregated overall interview score
+- Automated **confidence indicator** based on response quality
+
+### 🔒 Intelligent Proctoring System
+- Fullscreen enforcement with ESC key detection
+- Tab switching and window blur monitoring
+- Copy-paste and developer tools blocking
+- **Webcam integration** with MediaPipe-based head pose detection
+- Auto-submission after **3 security violations**
+
+### 📊 Structured Performance Analytics
+- Radar chart visualization of skill dimensions
+- Question-by-question breakdown with reference answers
+- Improvement suggestions per question
+- Plagiarism analysis on responses
+- Confidence level estimation
+
+### 📈 Interview History & Progress
+- Persistent storage of all sessions across time
+- Security status tagging: **Completed / Cheated**
+- Cross-session trend analysis and score tracking
+
+---
+
+## 📸 Application Screenshots
+
+### 🔐 Authentication — Login Interface
+
+> Secure email/password login before accessing the interview environment.
+
+![Login Interface](https://github.com/user-attachments/assets/76c1d2b0-a633-481b-9337-d469f4574c52)
+
+---
+
+### 🔑 Password Reset System
+
+> Secure credential recovery for returning candidates.
+
+![Password Reset](https://github.com/user-attachments/assets/ab3970e7-99f6-4dc0-a43e-dad4ac731d01)
+
+---
+
+### 🧑‍💻 Interview Dashboard
+
+> Central hub for launching new sessions — role selection and interview type configuration.
+
+![Interview Dashboard](https://github.com/user-attachments/assets/999bb613-5344-4112-be60-c1f1f1149ae7)
+
+---
+
+### 🎯 Role & Mode Selection
+
+> Choose from 8+ technical roles and 2 interview modes.
+
+![Role Selection 1](https://github.com/user-attachments/assets/300336a8-0ad8-41a7-bd83-395e83460cf1)
+
+![Role Selection 2](https://github.com/user-attachments/assets/bd914a9b-79db-44c9-8a5f-60f3ea67a363)
+
+**Available Roles:**
+`Software Engineer` · `Data Scientist` · `ML Engineer` · `Frontend Developer` · `Backend Developer` · `DevOps Engineer` · `Cybersecurity Analyst` · `Cloud Engineer`
+
+**Interview Modes:**
+`Technical Interview` · `Behavioral Interview`
+
+---
+
+### 🤖 AI Proctored Interview Activation
+
+> Full-screen and webcam access are required before the interview begins — ensuring a controlled, monitored environment.
+
+![Proctored Mode Activation](https://github.com/user-attachments/assets/e71881b5-29a3-4ed1-8a87-cfe0f72c1b62)
+
+---
+
+### ⚠️ Security Violation Detection
+
+> Real-time violation warnings with automatic session termination after 3 infractions.
+
+![Security Violation 1](https://github.com/user-attachments/assets/5e993a60-06d4-43c8-87c5-e42ad44890f9)
+
+![Security Violation 2](https://github.com/user-attachments/assets/e01f66a1-e83c-4619-a1e8-ebd193e204d2)
+
+---
+
+### ⏱ Live Interview Question Interface
+
+> Real-time interview environment with countdown timer, answer submission box, and live webcam monitoring.
+
+![Interview Interface](https://github.com/user-attachments/assets/a74704ee-0adc-4af6-b126-2eff2c2d5cef)
+
+---
+
+### 📊 AI-Generated Performance Report
+
+> Comprehensive post-interview evaluation including an overall score and radar chart visualization.
+
+![Performance Report 1](https://github.com/user-attachments/assets/8c2fcdd9-0d21-40bc-9e8b-7c6b8da0aa36)
+
+![Performance Report 2](https://github.com/user-attachments/assets/a346b3c3-75b8-4381-a5c1-29e1608f8415)
+
+---
+
+### 📋 Detailed Answer Evaluation
+
+> Question-by-question breakdown with candidate answers, reference answers, scores, and improvement tips.
+
+![Answer Evaluation 1](https://github.com/user-attachments/assets/4df613de-4266-440b-a612-4611dcba9bba)
+
+![Answer Evaluation 2](https://github.com/user-attachments/assets/d635213b-4aa8-43cf-9478-f30dd47deccf)
+
+---
+
+### 📈 Interview History & Progress Tracking
+
+> Full session history with role, type, score, date, and security flag — enabling long-term progress monitoring.
+
+![Interview History](https://github.com/user-attachments/assets/9a1dfd6d-5fd2-4326-9533-6d06a65d36ed)
+
+---
+
+## 🏗 System Architecture
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                        CLIENT (Browser)                              │
+│   HTML5 · CSS3 · JavaScript · Chart.js · MediaPipe (WASM)           │
+│   Proctoring Layer: Fullscreen · Tab · Blur · Paste · DevTools       │
+└───────────────────────────┬──────────────────────────────────────────┘
+                            │ HTTP / REST
+┌───────────────────────────▼──────────────────────────────────────────┐
+│                     FLASK APPLICATION LAYER                          │
+│                                                                      │
+│  ┌─────────────┐  ┌──────────────────┐  ┌──────────────────────┐   │
+│  │ auth_routes │  │ interview_routes  │  │   report_routes      │   │
+│  └─────────────┘  └──────────────────┘  └──────────────────────┘   │
+└───────────────────────────┬──────────────────────────────────────────┘
+                            │
+┌───────────────────────────▼──────────────────────────────────────────┐
+│                        AI ENGINE                                     │
+│                                                                      │
+│  adaptive_engine.py   →  Difficulty progression logic               │
+│  question_generator.py →  Role-aware question synthesis             │
+│  evaluator.py         →  Multi-criteria answer scoring              │
+│  fairness.py          →  Score normalization & calibration          │
+│  plagiarism.py        →  Response originality analysis              │
+│  report_generator.py  →  Structured report compilation              │
+└───────────────────────────┬──────────────────────────────────────────┘
+                            │
+┌───────────────────────────▼──────────────────────────────────────────┐
+│                     DATA LAYER (SQLite + SQLAlchemy)                 │
+│   Users · Sessions · Questions · Responses · Scores · Violations    │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## 📂 Project Structure
+
+```
+ai-interview-platform/
 │
-├── app.py
-├── config.py
-├── requirements.txt
-├── interview.db
+├── app.py                        # Application entry point
+├── config.py                     # Environment configuration
+├── requirements.txt              # Python dependencies
 │
 ├── ai_engine/
-│   ├── adaptive_engine.py
-│   ├── evaluator.py
-│   ├── fairness.py
-│   ├── plagiarism.py
-│   ├── question_generator.py
-│   └── report_generator.py
+│   ├── adaptive_engine.py        # Difficulty progression logic
+│   ├── evaluator.py              # Multi-criteria answer scoring
+│   ├── fairness.py               # Score normalization
+│   ├── plagiarism.py             # Response originality detection
+│   ├── question_generator.py     # Role-specific question synthesis
+│   └── report_generator.py       # Performance report compilation
 │
 ├── database/
-│   ├── db.py
-│   └── models.py
+│   ├── db.py                     # Database connection manager
+│   └── models.py                 # SQLAlchemy ORM models
 │
 ├── routes/
-│   ├── auth_routes.py
-│   ├── interview_routes.py
-│   └── report_routes.py
+│   ├── auth_routes.py            # Login, register, password reset
+│   ├── interview_routes.py       # Session management, Q&A flow
+│   └── report_routes.py          # Report generation endpoints
 │
 ├── templates/
 │   ├── base.html
@@ -376,76 +289,254 @@ Includes:
 │       └── style.css
 │
 └── instance/
-    └── interview.db
- ````   
-⚙️ Installation
+    └── interview.db              # SQLite persistent storage
+```
 
-Clone the repository
+---
+
+## 🛠 Tech Stack
+
+### Backend
+| Technology | Purpose |
+|---|---|
+| **Flask** | Web application framework & routing |
+| **SQLAlchemy** | ORM for database interactions |
+| **SQLite** | Lightweight relational data storage |
+| **Werkzeug** | Password hashing & security utilities |
+| **python-dotenv** | Environment variable management |
+
+### Frontend
+| Technology | Purpose |
+|---|---|
+| **HTML5 / CSS3** | Markup & responsive styling |
+| **JavaScript (Vanilla)** | Proctoring logic & dynamic UI |
+| **Chart.js** | Radar chart & performance visualization |
+| **MediaPipe** | Real-time head pose detection (WASM) |
+
+### AI & Evaluation
+| Component | Capability |
+|---|---|
+| **Adaptive Engine** | Dynamic difficulty adjustment |
+| **Evaluator** | Multi-criteria automated scoring |
+| **Plagiarism Checker** | Response originality analysis |
+| **Fairness Module** | Score normalization & calibration |
+| **Report Generator** | Structured performance compilation |
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+- Python **3.10+**
+- pip package manager
+- A modern browser (Chrome/Edge recommended for proctoring features)
+
+### 1. Clone the Repository
+```bash
 git clone https://github.com/yourusername/ai-interview-platform.git
 cd ai-interview-platform
-Install dependencies
+```
+
+### 2. Create a Virtual Environment *(recommended)*
+```bash
+python -m venv venv
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
+```
+
+### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
-Run the application
+```
+
+### 4. Configure Environment
+```bash
+cp .env.example .env
+# Edit .env with your secret key and any API credentials
+```
+
+### 5. Initialize the Database
+```bash
+python -c "from database.db import init_db; init_db()"
+```
+
+### 6. Run the Application
+```bash
 python app.py
-Open in browser
+```
+
+### 7. Open in Browser
+```
 http://127.0.0.1:5000
-📦 Requirements
+```
 
-Main Python dependencies:
+---
 
-• Flask
-• Flask-SQLAlchemy
-• SQLAlchemy
-• Werkzeug
-• Jinja2
-• python-dotenv
-• gunicorn
+## 🎬 Interview Workflow
 
-Install using:
+```
+Candidate Login / Register
+        │
+        ▼
+  Select Role & Mode
+  (Technical / Behavioral)
+        │
+        ▼
+  Proctoring Activation
+  (Fullscreen + Webcam)
+        │
+        ▼
+  ┌──────────────────────┐
+  │  AI Generates Q1     │  ← Adaptive Engine picks difficulty
+  │  Timer: 60 seconds   │
+  │  Webcam: Monitoring  │
+  └──────┬───────────────┘
+         │  Answer submitted / Timer expires
+         ▼
+  Evaluator scores response → Adjusts next difficulty
+         │
+         ▼  (Repeat × N questions)
+         │
+         ▼
+  Report Generation
+  (Score · Radar Chart · Feedback · Plagiarism Check)
+        │
+        ▼
+  Session Stored in History
+  (Score · Role · Date · Security Status)
+```
 
-pip install -r requirements.txt
+---
 
-🧪 Example Interview Workflow
+## 🔒 Intelligent Proctoring System
 
-1️⃣ Candidate registers or logs in
-2️⃣ Candidate selects interview role
-3️⃣ AI generates adaptive questions
-4️⃣ Candidate answers questions (text-based)
-5️⃣ Proctoring system monitors interview activity
-6️⃣ Evaluation engine scores responses
-7️⃣ Performance report and feedback are generated
+The proctoring layer runs entirely in the browser and activates before the first question is displayed.
 
-🎯 Applications
+### Detection Events
 
-• Technical interview preparation
-• Mock interview simulation
-• Automated recruitment screening
-• Skill assessment platforms
-• Educational learning systems
-• Online coding interview environments
+| Violation Type | Detection Method | Response |
+|---|---|---|
+| Leaving fullscreen | `fullscreenchange` event | Warning issued |
+| Tab switch | `visibilitychange` event | Warning issued |
+| Window blur | `blur` event | Warning issued |
+| ESC key press | `keydown` listener | Warning issued |
+| Copy-paste attempt | `copy` / `paste` events | Blocked silently |
+| DevTools open | Size/timing heuristics | Blocked |
+| Head turned away | MediaPipe head pose | Warning issued |
+| **3rd Violation** | Counter threshold | **Auto-submit + Flag** |
 
-🔮 Future Improvements
+All violations are logged with timestamps and stored against the interview session record.
 
-• NLP-based semantic answer evaluation
-• Resume-based question generation
-• AI interviewer avatar
-• Video interview recording
-• Cloud deployment and scaling
-• Multi-candidate analytics dashboard
+---
 
-👨‍💻 Author
+## 🧠 AI Evaluation Engine
 
-Developed as an AI-driven interview simulation and candidate evaluation platform demonstrating the integration of:
+Each candidate response is scored across **5 dimensions**:
 
-• adaptive interview logic
-• automated candidate scoring
-• secure browser-based proctoring
-• structured performance analytics
+```
+┌─────────────────────────────────────────────────────┐
+│  Evaluation Dimension         Weight                │
+│  ─────────────────────────    ──────                │
+│  Conceptual Correctness       High                  │
+│  Technical Depth              High                  │
+│  Response Clarity             Medium                │
+│  Logical Structure            Medium                │
+│  Relevance to Expected Answer High                  │
+└─────────────────────────────────────────────────────┘
+```
 
-within a modular full-stack architecture.
+### Automated Feedback Tiers
 
-📜 License
+| Score Range | Status | Feedback Type |
+|---|---|---|
+| **≥ 8 / 10** | 🟢 Interview Ready | Advanced improvement suggestions |
+| **5 – 7 / 10** | 🟡 Developing | Concept clarification + explanation tips |
+| **< 5 / 10** | 🔴 Needs Work | Fundamental revision + structured practice |
 
-This project is licensed under the MIT License.
+---
 
-⭐ If you find this project useful, consider starring the repository.
+## 📊 Performance Reports
+
+Post-interview reports are generated automatically and include:
+
+- ✅ **Overall Score** — Aggregated weighted score
+- ✅ **Radar Chart** — Visual skill distribution across dimensions
+- ✅ **Question-Level Breakdown** — Candidate answer vs. reference answer
+- ✅ **Per-Question Score** — Individual scoring with rubric justification
+- ✅ **Improvement Suggestions** — Actionable, question-specific advice
+- ✅ **Plagiarism Analysis** — Originality check on submitted answers
+- ✅ **Confidence Indicator** — Response quality proxy
+- ✅ **Security Status** — Clean / Violation flagged
+
+---
+
+## 🏆 Hackathon Recognition
+
+<div align="center">
+
+**🎖️ AXIOML 2026 — National Level Hackathon**
+
+*Department of Computer Science & Engineering (AI & ML)*
+*Prathyusha Engineering College*
+*February 3–4, 2026*
+
+</div>
+
+This platform was designed, built, and demonstrated under time-constrained, competitive conditions at **AXIOML 2026**, a national-level hackathon focused on AI-driven innovation. The project was recognized for its integration of adaptive AI logic, real-time proctoring, and structured automated evaluation within a full-stack architecture.
+
+> 📎 [View LinkedIn Certificate & Recognition Post](https://www.linkedin.com/posts/m-v-karthikeya-b26a2131b_hackathon-axioml2026-artificialintelligence-activity-7437492275678515200-QQbR?utm_source=share&utm_medium=member_desktop)
+
+---
+
+## 🔮 Roadmap
+
+| Feature | Status |
+|---|---|
+| NLP-based semantic answer evaluation | 🔲 Planned |
+| Resume-based adaptive question generation | 🔲 Planned |
+| AI interviewer avatar (TTS + animation) | 🔲 Planned |
+| Video interview recording & replay | 🔲 Planned |
+| Cloud deployment (AWS / GCP) | 🔲 Planned |
+| Multi-candidate analytics dashboard | 🔲 Planned |
+| LLM-powered conversational interview | 🔲 Planned |
+| Coding challenge sandbox (Judge0 integration) | 🔲 Planned |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. To get started:
+
+```bash
+# 1. Fork the repository
+# 2. Create your feature branch
+git checkout -b feature/your-feature-name
+
+# 3. Commit your changes
+git commit -m "feat: add your feature description"
+
+# 4. Push to your branch
+git push origin feature/your-feature-name
+
+# 5. Open a Pull Request
+```
+
+Please follow [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
+
+---
+
+<div align="center">
+
+**Built with precision. Tested under pressure. Recognized at the national level.**
+
+*If this project helped you, please consider giving it a ⭐ on GitHub.*
+
+[![GitHub Stars](https://img.shields.io/github/stars/yourusername/ai-interview-platform?style=social)](https://github.com/yourusername/ai-interview-platform)
+
+</div>
