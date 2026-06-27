@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/AI--Powered-Interview%20Platform-6C63FF?style=for-the-badge&logo=robot&logoColor=white" />
 
-# 🤖 AI-Driven Adaptive Interview Simulation & Evaluation Platfor
+# 🤖 AI-Driven Adaptive Interview Simulation & Evaluation Platform
 
 ### *Intelligent Proctoring · Adaptive Questioning · Automated Scoring · Performance Analytics*
 
